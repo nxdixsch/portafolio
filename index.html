@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio NP</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/NPV/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#servicios2" onclick="seleccionar(this)">SKILLS</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://github.com/nxdixsch"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nadia-edrehi-perez-velazquez-360559275/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Nadia Pérez</h2>
+                <p class="descripcion">Estudiante de la carrera de Ingenieria en Sistemas Computacionales.</p>
+                <a href="#sobremi">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Nadia Pérez</span> </h2> 
+            <p>Soy estudiante de la carrera de Ingeniería en Sistemas Computacionales. Soy diseñadora UX, con habilidades de desarollo Front para aplicaciones moviles. Actualmente en crecimiento en el área de Back End para desarrollo web y con interés en el área de Testing. </p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION E X P E R I E N C I A -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MI EXPERIENCIA</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Front End</h4>
+                <hr>
+                <p>En front, he realizado formularios tanto para aplicaciones de escritorio y mobile, aunque mi preferencia va mas para el desarrollo front de aplicaciones moviles, mayormente he trabajado con AS, pero pienso aventurarme y provar con Flutter. </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Back End</h4>
+                <hr>
+                <p>En Back mis habilidades dominadas al 100%, actualmente me he inclinado mas por esta área y es para desarrollo web.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Diseño UX/UI</h4>
+                <hr>
+                <p>A lo largo de la carrera tuve que realizar las pantallas para mis proyectos, para ello he utilizado Adobe XD. Actualmente he intentado usar Figma pero aun no lo domino por completo. </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- S E C C I O N P R O Y E C TO S -->
+    <div class="contenedor-skills" id="skills">
+        <h3 class="titulo-seccion">Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <img src="img/zaico.png" width="200" heigth="320">
+                <div class="info">
+                    <h4>Zaico: Inventario Móvil</h4>
+                    <p>Aplicación móvil</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/manabu.png" width="200" heigth="320">
+                <div class="info">
+                    <h4>Manbú: Aprendizaje para niños</h4>
+                    <p>Aplicación móvil</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/habits.png" width="200" heigth="320">
+                <div class="info">
+                    <h4>Habits: Registro de habitos y emociones en estudiantes</h4>
+                    <p>Aplicación móvil</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- S E C C I O N SKILLS -->
+    <section id="servicios2">
+        <h3 class="titulo-seccion">Conocimientos en:</h3>
+        <div class="fila">
+            <div class="servicio">
+                <img src="img/as.png" width="210" heigth="380">
+            </div>
+            <div class="servicio">
+                <img src="img/axd.png" width="210" heigth="380">
+            </div>
+            <div class="servicio">
+                <img src="img/figma.jpg" width="210" heigth="380">
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <img src="img/htmlcssjs-overview.png" width="210" heigth="380">
+            </div>
+            <div class="servicio">
+                <img src="img/java.png" width="210" heigth="380">
+            </div>
+            <div class="servicio">
+                <img src="img/node.png" width="210" heigth="380">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://github.com/nxdixsch"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nadia-edrehi-perez-velazquez-360559275/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
